@@ -1,36 +1,39 @@
 # Exp.No:2d
-## LOOPING PATTERNS - PRINTING PATTERN
-
----
+## LOOPING PATTERNS - Create a Python program to print the  simple number pattern using a for loop.Get the input for the number of rows 
 
 ### AIM  
-To write a Python program to print a triangular star pattern using loops.
-
----
+To write a Python program to print a simple number pattern based on the given number of rows using for loops.
 
 ### ALGORITHM
+1.Start the program.
 
-1. Begin the program.  
-2. Read the integer `n` from the user using `input()`. This will determine the number of rows in the pattern.  
-3. Initialize a variable `i = 0`. This will help adjust the spacing before the stars.  
-4. Loop through rows from `0` to `n - 1`:  
-   - For each row, calculate the number of spaces to print using the formula: `((n - rows - 1) * 2) + i`.  
-   - Print the calculated number of spaces using `print(" ", end="")`.  
-   - Increment `i` by 1 after each row.  
-   - Print stars using a nested loop: the number of stars in each row is `rows + 1`, printed using `print("*", end="  ")`.  
-   - Print a newline after each row using `print("")` to move to the next line.  
-5. Terminate the program.
+2.Input the number of rows n from the user.
 
----
+3.Use an outer for loop to repeat from i = 1 to n:
+
+4.For each row i, use an inner for loop from j = 1 to i:
+
+5.Print the value of i followed by a space (end=" ").
+
+6.After inner loop ends, print a newline to move to the next row.
+
+7.End the program.
 
 ### PROGRAM
 ```
-#Reg.No:
-#Name:
-#Add Your Code Here
+#Reg.No:212223020018
+#Name:Mohamed Jafin S
+n=int(input())
+for i in range (1,n):
+    for j in range (1,i+1):
+        print(i,end=" ")
+    print(" ")     
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/845fb71c-8206-4af1-8efd-e10137f1526a)
 
 ### RESULT
+The program successfully prints a simple number pattern based on the number of rows entered by the user.
+
